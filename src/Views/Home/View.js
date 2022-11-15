@@ -64,13 +64,13 @@ const View = ()=>{
         <span className="error_message">{(error!==null) && error.message}</span>
         <br/>
         <Container maxWidth="sm">
-          <Button variant="contained" onClick={()=>{
+          <Button sx={{backgroundColor: 'red'}} variant="contained" onClick={()=>{
             fetchWeatherDataCallback(cityInput)
           }}>
             Fetch Data
           </Button>
           &nbsp;
-          <Button variant="contained" onClick={async()=>{
+          <Button sx={{backgroundColor: 'red'}} variant="contained" onClick={async()=>{
             const cityInputSplit = cityInput.split(",")
             try {
               const validationResult = await validateIfCityExist(cityInput)
