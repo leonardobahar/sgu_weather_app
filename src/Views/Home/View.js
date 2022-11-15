@@ -54,6 +54,7 @@ const View = ()=>{
 
   return (
     <div className="container">
+      <h1>Weather App</h1>
       <div className="form">
         <p className="mt-8 decoration-wavy">Enter City Name</p>
         <br/>
