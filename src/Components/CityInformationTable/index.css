@@ -4,4 +4,6 @@
 
 .weather-info th{
     text-align: left;
+    border-color: black;
+    border: solid 1px;
 }
